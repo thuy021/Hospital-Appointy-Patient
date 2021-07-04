@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kltn.hospitalappointy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/heart_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/heart_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_DoctorProfileActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_ProfileActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_RegistrationActivity"
+            android:parentActivityName=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_BookAppointmentActivity"
+            android:parentActivityName=".Activity.Patient_DoctorProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_ShowBookedAppointmentActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Doctor_ProfileActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Doctor_EditProfileActivity"
+            android:parentActivityName=".Activity.Doctor_ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Patient_EditProfileActivity"
+            android:parentActivityName=".Activity.Patient_ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Doctor_ShowAppointmentActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Forgot_PasswordActivity"
+            android:parentActivityName=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Activity.About_App"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
